@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeLab Integration – Project Closure</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="matrix-bg"></div>
+    <div class="particles"></div>
+
+    <div class="container">
+      <section class="hero">
+        <h1 class="hero-title">HomeLab Integration – Project Closure</h1>
+        <p class="hero-subtitle">
+          managing it projects • fall 2025 • wendy buonavita
+        </p>
+      </section>
+
+      <div class="card-grid">
+        <a
+          href="https://caldodemiso.github.io/project-charter-v3/"
+          class="card charter"
+          target="_blank"
+        >
+          <div class="card-number">Card 01</div>
+          <h2 class="card-title">Project Charter</h2>
+          <p class="card-description">View the approved project charter.</p>
+        </a>
+
+        <a href="status.html" class="card">
+          <div class="card-number">Card 02</div>
+          <h2 class="card-title">Project Status Reports</h2>
+          <p class="card-description">
+            All weekly status reports, newest on top.
+          </p>
+        </a>
+
+        <a href="closure.html" class="card">
+          <div class="card-number">Card 03</div>
+          <h2 class="card-title">Project Closure Document</h2>
+          <p class="card-description">
+            Closure type, lessons learned, and retrospective.
+          </p>
+        </a>
+
+        <a href="star.html" class="card">
+          <div class="card-number">Card 04</div>
+          <h2 class="card-title">STAR Stories</h2>
+          <p class="card-description">
+            Five STAR stories based on this project and PMI principles.
+          </p>
+        </a>
+
+        <a href="interviews.html" class="card">
+          <div class="card-number">Card 05</div>
+          <h2 class="card-title">Stakeholder Interviews</h2>
+          <p class="card-description">
+            Summaries and insights from three stakeholder interviews.
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      // Generate floating particles
+      function generateParticles() {
+        const particlesContainer = document.querySelector(".particles");
+        const particleCount = Math.floor(window.innerWidth / 100);
+
+        for (let i = 0; i < particleCount; i++) {
+          const particle = document.createElement("div");
+          particle.className = "particle";
+          particle.style.left = Math.random() * 100 + "%";
+          particle.style.animationDelay = Math.random() * 15 + "s";
+          particle.style.animationDuration = 15 + Math.random() * 10 + "s";
+          particlesContainer.appendChild(particle);
+        }
+      }
+
+      generateParticles();
+    </script>
+  </body>
+</html>
